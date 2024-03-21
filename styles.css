@@ -1,0 +1,152 @@
+.container {
+  gap: 2%;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  width: 50%;
+  height: 30%;
+  text-align: center;
+  display: inline-block;
+
+}
+
+body {
+      /* Set background image */
+      background-image: url('./assets/bg.jpg');
+      /* Set background size and position */
+      background-size: cover;
+      background-position: center;
+      /* Create overlay using linear gradient */
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./assets/bg.jpg');
+      /* Ensure overlay covers the entire background */
+      background-size: cover;
+      /* Ensure overlay covers the entire body */
+      height: 100vh;
+      margin: 0;
+ background-image: linearGradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/bg.jpg");
+}
+div.diceSection{
+  border: #EEEEEE solid 5px;
+  border-radius: 5px;
+  margin-right: 3%;
+  justify-content: center;
+  margin-left: 5%;
+  background-color: #17294e;
+  width: 60%;
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+}
+
+img {
+  width: 50%;
+}
+
+footer {
+  margin-top: 2%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
+}
+img#won{
+  width: 3.5%;
+}
+h2#won{
+  color: orange;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+h2 em{
+  background-color: azure;
+  color: chocolate;
+}
+p.yourTurn{
+  font-size: 1rem;
+  text-align: center;
+  color: hsl(46, 78%, 53%);
+}
+.all{
+  width: 100%;
+  display: flex;
+}
+.results{
+  display: block;
+  justify-content: space-around;
+  width: 30%;
+  background-color: #1e3a3a;
+  border-radius: 2rem;
+  height: 50%;
+}
+.titlediv{
+  justify-content: start;
+  display: flex;
+  gap: 2px;
+}
+#resultstitle{
+  text-align: center;
+  color: orange;
+}
+button{
+  font-size: 30px;
+  border-radius: 5px;
+  margin-top: 1.5%;
+  height: 20%;
+  width: 30%;
+  background-color: rgb(16, 181, 49);
+  color: rgb(15, 84, 137);
+}
+p.points{
+  color: greenyellow;
+}
+div.pleyers{
+  display: flex;
+  justify-content: space-around;
+}
+audio{
+  margin-top: 5%;
+  width: 50%;
+  height: 30px;
+  background-color: #1e3a3a;
+}
+@media (max-width: 1000px) {
+  audio{
+    margin-top: 5%;
+    width: 50%;
+    height: 30px;
+  }  
+  body{
+    margin-top: 20%;
+  }
+  .all{
+    display: inline-block;
+  }
+  div.diceSection{
+    border: #EEEEEE solid 5px;
+    border-radius: 5px;
+    justify-content: center;
+    margin-left: 5%;
+    background-color: #17294e;
+    width: 60%;
+    height: 70%;
+    display: inline-flex;
+  }
+  .results{
+    margin-left: 30%;
+    display: block;
+    justify-content: center;
+    width: 40%;
+    background-color: #1e3a3a;
+    border-radius: 2rem;
+    height: 50%;
+  }
+}

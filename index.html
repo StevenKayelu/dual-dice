@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dicee</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lacquer&family=Madimi+One&family=Mako&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+        <button type="submit" value="Play">Play</button>
+        <div class="titlediv">
+          <h2 id="won"></h2>
+        </div>
+      <div class="all">
+        <div class="diceSection">
+          <div class="dice">
+            <p>Player 1</p>
+            <img class="img1" src="./assets/dice6.png" alt="" />
+            <p id="turn1" class="yourTurn"></p>
+          </div>     
+          <div class="dice">
+            <p>Player 2</p>
+            <img class="img2" src="./assets/dice6.png" alt=""/>
+            <p id="turn2"  class="yourTurn"></p>
+          </div>
+        </div>
+        <div class="results">
+          <h2 id="resultstitle">Results</h2><hr>
+          <div class="pleyers">
+            <div><p>Player1</p>
+              <p class="points" id="pointsForP1"> </p>
+            </div>
+            <div><p>Player2</p>
+              <p class="points" id="pointsForP2"></p>
+            </div>
+          </div>
+          <audio src="./assets/music.mp3" controls></audio>
+        </div>
+      </div>
+    </div>
+
+    <footer>&copy Steven🎲Kayelu</footer>
+    <script src="index.js"></script>
+  </body>
+</html>
